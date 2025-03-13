@@ -1,23 +1,34 @@
 
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Media from "./pages/Media";
 import Header from "./components/Header"; 
 import Footer from "./components/Footer"; 
-import videoBg from './assets/italawavideo2.mp4';
-import './App.css';
+import videoBg from "./assets/italawavideo2.mp4";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      {/*Background (css of this is in index.css not App.css*/}
-      <video src = {videoBg} autoPlay loop muted/>
-      {/* Header */}
-      <Header />
+      {/* Background Video */}
+      <video src={videoBg} autoPlay loop muted />
 
-      {/* Main Content */}
-      <Home />
+      <Router>
+        {/* Header */}
+        <Header />
 
-      {/* Footer */}
-      <Footer />
+        <Routes>
+          {/* Home Route */}
+          <Route path="/" element={<Home />} />
+
+          {/* Media Route (use a different path) */}
+          <Route path="/media" element={<Media />} />
+        </Routes>
+
+        {/* Footer */}
+        <Footer />
+      </Router>
     </div>
   );
 }
