@@ -42,11 +42,11 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  padding: 20px 0;
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Vertically align items */
   z-index: 1000;
+  transition: background-color 1s ease;
 }
 
 header .container {
@@ -62,12 +62,12 @@ header .header-logo {
 }
 
 header .header-logo img {
-  width: 180px; /* Adjust logo size */
+  width: 140px; /* Adjust logo size */
 }
 
 header nav {
   font-family: 'Georgia', serif;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   letter-spacing: 0.5px;
   text-align: center; /* Center the navigation links */
   width: 100%; /* Allow nav to take up full width */
@@ -94,6 +94,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #e8562a;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 1); /* Dark background on scroll */
 }
 
 nav ul li a.active {
@@ -161,6 +165,33 @@ footer {
   color: #e8562a; 
 }
 
+
+
+.small-image,.party-logo-images {
+    max-width: 60%;
+    height: auto;
+}
+
+.party-logo-images {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.party-logo-images.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.jaiye, .masked, .italawa, .all-four {
+   top: 55%;
+   align-items: center;
+   text-align: center;
+}
+
+
+
 /* EVENTS PAGE SECTION*/
 
 
@@ -169,5 +200,10 @@ footer {
 
 
 /*MEDIA PAGE SECTION*/
-
+.aboutus {
+  align-items: center;/* Centers the div */
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
 
