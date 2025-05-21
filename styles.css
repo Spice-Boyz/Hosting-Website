@@ -62,7 +62,7 @@ header .header-logo {
 }
 
 header .header-logo img {
-  width: 140px; /* Adjust logo size */
+  width: 125px; /* Adjust logo size */
 }
 
 header nav {
@@ -87,7 +87,8 @@ header nav ul li {
 header nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 550;
+  font-size: 1.2rem;
   transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
   padding-bottom: 5px;
 }
@@ -157,7 +158,7 @@ footer {
 .footer-container a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
