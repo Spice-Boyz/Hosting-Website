@@ -58,16 +58,18 @@ header .container {
 }
 
 header .header-logo {
-  text-align: left; /* Align the logo to the left */
+  text-align: center; /* Align the logo to the center */
+  justify-content: center;
+  
 }
 
 header .header-logo img {
-  width: 125px; /* Adjust logo size */
+  width: 80px; /* Adjust logo size */
 }
 
 header nav {
   font-family: 'Georgia', serif;
-  font-size: 1.3rem;
+  font-size: 0.5rem;
   letter-spacing: 0.5px;
   text-align: center; /* Center the navigation links */
   width: 100%; /* Allow nav to take up full width */
@@ -88,7 +90,7 @@ header nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 550;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
   padding-bottom: 5px;
 }
@@ -147,8 +149,7 @@ footer {
   row-gap: 10px;
 }
 
-.footer-contactus,
-.footer-followus {
+.footer-contactus {
   flex: 1; 
   text-align: center; 
   
@@ -169,7 +170,7 @@ footer {
 
 
 .small-image,.party-logo-images {
-    max-width: 60%;
+    max-width: 85%;
     height: auto;
 }
 
