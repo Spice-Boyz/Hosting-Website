@@ -1,0 +1,26 @@
+/* center it full-screen */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000; /* or whatever background you like */
+}
+
+/* the spinning “chrome” logo */
+.logo-spinner {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+
+ 
+
+  /* enable 3D rotation */
+  transform-style: preserve-3d;
+  animation: spin 5.0s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotateY(360deg); }
+}

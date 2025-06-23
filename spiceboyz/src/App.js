@@ -1,5 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Loading from './components/Loading';
+
 
 
 import Header from './components/Header';
@@ -11,6 +13,13 @@ import './App.css';
 
 
 function App() {
+  const [loading, setLoading] = React.useState(true);
+  React.useEffect(() => {
+    setTimeout(() => setLoading(false), 4500);
+  }, []);
+
+  if (loading) return <Loading />;
+
   return ( 
       <Router>
         <video
@@ -44,5 +53,7 @@ function App() {
      
   );
 }
+
+
 
 export default App;

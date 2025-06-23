@@ -8,7 +8,7 @@ function About() {
 
         <ul>
             <li>
-                <img src="/assets/IMG_5752.jpg"  className="small-image"  width="800" height="800"/></li>
+                <img src="/assets/SPICEBOYZCHROME.png"  className="small-image"  width="450" height="450"/></li>
             
           </ul> 
           
