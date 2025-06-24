@@ -3,6 +3,24 @@ import React from 'react';
 function About() {
     return(
         <section>
+        <video
+          id="background-video"
+          autoPlay
+          muted
+          loop
+          style={{
+            position: 'fixed',
+            right: 0,
+            bottom: 0,
+            minWidth: '100%',
+            minHeight: '100%',
+            zIndex: -1
+          }}
+        >
+          <source src="/assets/italawavideo2.mp4" type="video/mp4" />
+          
+        </video>
+        <div style={{backgroundColor: 'black'}}></div>
         <div style={{height: "25vh"}}></div>
         <div className = "all-four">
 

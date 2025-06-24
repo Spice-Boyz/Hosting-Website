@@ -2,7 +2,24 @@ import React from 'react';
 
 function Events() {
     return(
-    <div> 
+    <div>
+      <video
+          id="background-video"
+          autoPlay
+          muted
+          loop
+          style={{
+            position: 'fixed',
+            right: 0,
+            bottom: 0,
+            minWidth: '100%',
+            minHeight: '100%',
+            zIndex: -1
+          }}
+        >
+          <source src="/assets/italawavideo2.mp4" type="video/mp4" />
+          
+        </video> 
         <div style={{height: "20vh"}}></div>
         <section>
         <div className = "jaiye">

@@ -3,8 +3,11 @@ import React from 'react';
 
 function Main() {
     return (
-        <main>
-            <div className="announcement-container">
+        <main style={{ 
+      backgroundColor: '#0D0D0D'}}  >
+            
+            
+             <div  className="announcement-container">
                 <h1>SPICEBOYZ TURNS 1 !</h1>
                 <h2>4 events, 4 guys, 2 locations, 1 collab, many mixes, countless connections</h2>
                 <p>We want to thank everyone who has bought a ticket from our legwork warriors to our amapiano lovers. Everyone who told a friend and told a friend to tell a friend.</p>
