@@ -4,6 +4,7 @@
 html, body {
   overflow: auto;
   color: #060505;
+  background-color: #121212;
   
   
 
@@ -110,7 +111,7 @@ nav ul li a.active {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the div */
-  background-color: rgba(0, 0, 0, 1); /* Semi-transparent black */
+  /* Semi-transparent black */
   color: white;
   padding: 20px 40px;
   font-family: 'Georgia', serif;
@@ -202,6 +203,97 @@ footer {
 
 /* EVENTS PAGE SECTION*/
 
+/* Base Styles */
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    height: 50px;
+}
+
+
+/* Mobile Menu */
+.mobile-menu {
+     overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  padding: 0; /* starts collapsed */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  
+  
+}
+
+.mobile-menu.open {
+  max-height: 300px; 
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  padding: 20px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.mobile-menu a:hover {
+  color: #e8562a;
+}
+
+.mobile-menu img {
+    height: 50px;
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
 
 
 

@@ -3,10 +3,10 @@ import React from 'react';
 
 function Main() {
     return (
-        <main style={{ 
-      backgroundColor: '#0D0D0D'}}  >
-            
-            
+        
+        <main   >
+             <div style={{height: "20vh"}}></div>
+           
              <div  className="announcement-container">
                 <h1>SPICEBOYZ TURNS 1 !</h1>
                 <h2>4 events, 4 guys, 2 locations, 1 collab, many mixes, countless connections</h2>
