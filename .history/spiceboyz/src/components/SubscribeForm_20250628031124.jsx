@@ -43,9 +43,7 @@ const SubscribeForm = () => {
         }
     
 };
-
-
-  return ( //Subomi horrible UI 
+  return (
     <div>
     <form onSubmit={handleSubmit}>
   <input

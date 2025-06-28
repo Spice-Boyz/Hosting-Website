@@ -19,17 +19,16 @@ const SubscribeForm = () => {
 
         try {
             await addDoc(collection(db, "subscribers"), {
-                name: name, 
                 email: email, //save users email 
                 timestamp: serverTimestamp()
             });
             //Send email with EmailJS
             await emailjs.send(
-                    "service_7ph7szl",     //  emailjs service ID
-                    "template_lrol84s",    //  emailjs template ID
+                    "service_7ph7szl",     //  Replace with your actual service ID
+                    "template_lrol84s",    //  Replace with your template ID
                 {
-                    name: name, // the users name 
-                    user_email:email, //the users email
+                    name: "",
+                    user_email:email,
                 },
                     "55yoe56xa1phFh3yL"      //  public key
       );
@@ -43,9 +42,7 @@ const SubscribeForm = () => {
         }
     
 };
-
-
-  return ( //Subomi horrible UI 
+  return (
     <div>
     <form onSubmit={handleSubmit}>
   <input
@@ -73,4 +70,5 @@ const SubscribeForm = () => {
 };
 
 
+// Export the component so it can be used in other parts of the app
 export default SubscribeForm;
