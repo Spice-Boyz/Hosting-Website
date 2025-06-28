@@ -154,7 +154,7 @@ footer {
       
 
 .footer-container a {
-  color: white;
+  color: grey;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -163,6 +163,53 @@ footer {
 .footer-container a:hover {
   color: #e8562a; 
 }
+
+.updates-form input {
+  border: 1px solid rgb(175, 174, 174);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(254, 254, 254);
+  outline: none;
+  max-width: 500px;
+  width: 80%;
+  box-sizing: border-box;
+  
+}
+
+.updates-form input::placeholder {
+  color: rgb(150, 149, 149);
+  opacity: 1; 
+  font-family: 'Georgia', serif;
+
+}
+
+.updates-form button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.updates-form button:hover {
+  background-color: #e8562a;
+  color: rgb(255, 254, 254);
+}
+
+.updates-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.updates-form li {
+  margin-top: 10px;
+}
+
 
 
 
@@ -294,6 +341,7 @@ footer {
         display: block;
     }
 }
+
 
 
 

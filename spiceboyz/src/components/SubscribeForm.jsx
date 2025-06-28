@@ -46,23 +46,31 @@ const SubscribeForm = () => {
 
 
   return ( //Subomi horrible UI 
-    <div>
+    <div className="updates-form">
     <form onSubmit={handleSubmit}>
-  <input
-    type="text"
-    placeholder="Enter your name"
-    value={name}
-    onChange={(e) => setName(e.target.value)}
-    required
-  />
-  <input
-    type="email"
-    placeholder="Enter your email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    required
-  />
-  <button type="submit">Subscribe</button>
+    <ul> 
+    <li> 
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        required
+      />
+    </li>
+    <li>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      </li>
+      <li>
+      <button type="submit">Subscribe</button>
+      </li>
+  </ul>
 </form>
 
       {/* Display success or error message */}
