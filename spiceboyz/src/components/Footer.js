@@ -1,4 +1,5 @@
 import React from 'react';
+import SubscribeForm from './SubscribeForm';
 
 function Footer() {
     return (
@@ -17,7 +18,11 @@ function Footer() {
           </p>
 
         </div>
-       
+       {/* ✅ Add SubscribeForm component here */}
+                <div className="footer-subscribe">
+                    <h4>STAY IN THE LOOP:</h4>
+                    <SubscribeForm />
+                </div>
       </div>
     </footer>
     );
