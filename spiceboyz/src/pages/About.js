@@ -5,7 +5,6 @@ function About() {
         <section>
         
         <div style={{backgroundColor: 'black'}}></div>
-        <div style={{height: "25vh"}}></div>
         <div className = "all-four">
 
         <ul>

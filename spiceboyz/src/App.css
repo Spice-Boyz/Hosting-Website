@@ -108,17 +108,28 @@ nav ul li a.active {
 /* Centering the announcement container */
 .announcement-container {
   position: absolute; /* Positions the container relative to the viewport */
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers the div */
-  /* Semi-transparent black */
+  align-items: center;
   color: white;
-  padding: 20px 40px;
   font-family: 'Georgia', serif;
-  border-radius: 10px; /* Soft rounded corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
   text-align: center;
-  width: 100%;
+  margin-left: 30px;
+  margin: 0 auto;             /* center it */
+  padding: 0 20px;            /* left/right padding */
+  
+  
+}
+
+.playlists {
+  padding: 20px;
+  transform: translateY(500px);
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  justify-content: center;        /* centers the whole row */
+
+
+
 }
 
 /* Style for the announcement text */
@@ -127,6 +138,7 @@ nav ul li a.active {
 }
 
 footer {
+  position: relative;
   font-family: 'Georgia', serif;
   color: white; /* Text color */
   text-align: center;
@@ -134,6 +146,7 @@ footer {
   width: 100%;
   bottom: 0;
   background-color: rgba(0, 0, 0, 8);
+  z-index: 1000;
 
 }
 
@@ -330,6 +343,8 @@ footer {
     height: 50px;
     margin: 10px 0;
 }
+
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {

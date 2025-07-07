@@ -1,0 +1,52 @@
+.playlist-scroller-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;  
+}
+
+.playlist-card {
+  flex: 0 0 auto;
+  width: 250px;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+
+}
+
+.playlist-image-link {
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  justify-content: center;  
+
+}
+
+.playlist-image-link:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(245, 107, 2, 0.648);
+}
+
+.playlist-image-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+
+}
+
+.playlist-caption {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+
+}

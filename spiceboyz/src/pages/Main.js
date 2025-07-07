@@ -1,5 +1,6 @@
 import React from 'react';
-
+import PlaylistScroller from '../components/PlaylistsScroller'; // go up one level, then into components
+import '../components/PlaylistScroller.css'; // CSS file in the same folder
 
 function Main() {
     return (
@@ -14,7 +15,15 @@ function Main() {
                 <p>Everyone who has collabed with us given us an opportunity to work with</p>
                 <h3>#SB4L</h3>
             </div>
-            <div style={{height: "110vh"}}></div>
+
+            <div className = "playlists">
+             <h1>Editors Picks:</h1>
+             
+             <PlaylistScroller />
+
+            </div>
+
+            <div style={{height: "70vh"}}></div>
         </main>
 );
     
