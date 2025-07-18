@@ -3,12 +3,12 @@ import React from 'react';
 const playlists = [
   {
     image: "/assets/IMG_6266.jpeg",
-    link: 'https://open.spotify.com/playlist/1',
+    link: 'https://open.spotify.com/playlist/1BTkq5NwhVV2bAhV8W2Dp7?si=04c2af414f93498b',
     author: 'Mayor',
   },
   {
     image: '/assets/IMG_6265.jpeg',
-    link: 'https://open.spotify.com/playlist/2',
+    link: 'https://open.spotify.com/playlist/5Vkist5St9EH9JtYVb2tmE?si=f4db1809b8fe432d',
     author: 'Subi',
   },
   {

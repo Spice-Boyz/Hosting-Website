@@ -3,8 +3,8 @@
 
 html, body {
   overflow: auto;
-  color: #060505;
-  background-color: #121212;
+  color: #000000;
+  background-color: #000000;
   
   
 
@@ -103,6 +103,17 @@ header.scrolled {
 nav ul li a.active {
   color: #eeebea91;
   border-bottom: 2px solid #e8562a;
+}
+/* only apply on mobile */
+@media (max-width: 768px) {
+  .mobile-menu a.active {
+    /* simple orange underline */
+    text-decoration: underline;
+    color: #eeebea91;
+    text-decoration-color: #e8562a;
+    /* optional: move the underline a bit below the text */
+    text-underline-offset: 5px;
+  }
 }
 
 /* Centering the announcement container */

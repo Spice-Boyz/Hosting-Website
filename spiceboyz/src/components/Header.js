@@ -41,15 +41,10 @@ function Header() {
             {/* Mobile menu */}
             {isMobileMenuOpen && (
                 <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
-                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-                        HOME
-                    </Link>
-                    <Link to="/Events" onClick={() => setIsMobileMenuOpen(false)}>
-                        EVENTS
-                    </Link>
-                    <Link to="/About" onClick={() => setIsMobileMenuOpen(false)}>
-                        ABOUT US
-                    </Link>
+                    <NavLink to="/" end className={({isActive})=>isActive?'active':undefined} onClick={()=>setIsMobileMenuOpen(false)}>HOME</NavLink>
+                    <NavLink to="/Events"      className={({isActive})=>isActive?'active':undefined} onClick={()=>setIsMobileMenuOpen(false)}>EVENTS</NavLink>
+                    <NavLink to="/About"       className={({isActive})=>isActive?'active':undefined} onClick={()=>setIsMobileMenuOpen(false)}>ABOUT US</NavLink>
+        
                 </div>
             )}
 
