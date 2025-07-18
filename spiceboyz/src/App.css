@@ -118,20 +118,21 @@ nav ul li a.active {
 
 /* Centering the announcement container */
 .announcement-container {
-  position: absolute; /* Positions the container relative to the viewport */
+  position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 40vh;
   color: white;
   font-family: 'Georgia', serif;
   text-align: center;
-  margin-left: 30px;
-  margin: 0 auto;             /* center it */
-  padding: 0 20px;            /* left/right padding */
-  
-  
+ 
 }
 
+
+
 .playlists {
-  padding: 20px;
   transform: translateY(500px);
   color: white;
   text-align: center;
@@ -144,9 +145,6 @@ nav ul li a.active {
 }
 
 /* Style for the announcement text */
-.announcement-container p {
-  font-size: 1.2rem;
-}
 
 footer {
   position: relative;
@@ -240,6 +238,12 @@ footer {
 .small-image,.party-logo-images {
     max-width: 85%;
     height: auto;
+    
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+ [data-aos] {
+  opacity: 1 !important;
 }
 
 
@@ -276,10 +280,14 @@ footer {
 
 /* Base Styles */
 .navbar {
+    position: fixed;        /* 👈 fixed in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #000;
     color: white;
-    padding: 10px;
-    position: relative;
+    padding: 10px 0;
 }
 
 .container {

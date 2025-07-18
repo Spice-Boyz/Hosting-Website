@@ -6,20 +6,20 @@ function Main() {
     return (
         
         <main   >
-             <div style={{height: "20vh"}}></div>
+            <div style={{height: "10vh"}}></div>
            
-             <div  className="announcement-container">
-                <h1>SPICEBOYZ TURNS 1 !</h1>
-                <h2>4 events, 4 guys, 2 locations, 1 collab, many mixes, countless connections</h2>
-                <p>We want to thank everyone who has bought a ticket from our legwork warriors to our amapiano lovers. Everyone who told a friend and told a friend to tell a friend.</p>
-                <p>Everyone who has collabed with us given us an opportunity to work with</p>
+             <div  className="announcement-container" data-aos="fade-up"> 
+                <h2>SPICEBOYZ TURNS 1 !</h2>
                 <h3>#SB4L</h3>
+                <p style={{height: "10vh"}}></p>
+                <h4>Tickets to next party:</h4>
+                <p>Eventbrite API</p>
             </div>
 
-            <div className = "playlists">
-             <h1>Editors Picks:</h1>
+            <div className = "playlists" > 
+             <h2 >Editors Picks:</h2>
              
-             <PlaylistScroller />
+             <PlaylistScroller  />
 
             </div>
 
