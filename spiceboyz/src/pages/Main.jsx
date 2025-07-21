@@ -1,6 +1,7 @@
 import PlaylistScroller from '../components/PlaylistsScroller'; // go up one level, then into components
 import '../components/PlaylistScroller.css'; // CSS file in the same folder
-
+import '../components/EventBrite'; 
+import EventBrite from '../components/EventBrite';
 
 function Main() {
 
@@ -20,15 +21,13 @@ function Main() {
                 
                 allowTransparency={true}
             ></iframe>
-                
                 <p style={{height: "10vh"}}></p>
                 <h4>Tickets to next party:</h4>
                 <p>Eventbrite API</p>
-            
+
            
             </div>
-
-
+     
             <div className = "playlists" > 
              <h2 >Editors Picks:</h2>
              
