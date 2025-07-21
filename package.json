@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "react-instagram-embed": "^3.0.0",
     "react-social-media-embed": "^2.5.18"
   }
