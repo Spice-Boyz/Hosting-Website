@@ -18,7 +18,7 @@ const playlists = [
   },
   {
     image: '/assets/IMG_5736.jpeg',
-    link: 'https://open.spotify.com/playlist/4',
+    link: 'https://open.spotify.com/playlist/0eFItZPqmhN1b6lh8MxxY3?si=0dbef42a94b946b0',
     author: 'SeunBILLY',
   },
 ];
