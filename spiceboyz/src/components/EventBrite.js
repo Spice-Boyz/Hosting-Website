@@ -8,21 +8,23 @@ const EventBrite = () => {
   useEffect(() => {
     const fetchEventDetails = async () => {
       try {
-        const response = await axios.get(
-          "https://www.eventbriteapi.com/v3/events/927564078127/",
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_EVENTBRITE_API_KEY}`,
-            },
-          }
-        );
-        setEvent(response.data);
-      } catch (error) {
-        console.error("Error fetching Eventbrite event:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+      console.log("Using API key:", process.env.REACT_APP_EVENTBRITE_API_KEY); // ✅ Debug here
+
+      const response = await axios.get(
+        "https://www.eventbriteapi.com/v3/events/927564078127/",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_EVENTBRITE_API_KEY}`,
+          },
+        }
+      );
+      setEvent(response.data);
+    } catch (error) {
+      console.error("Error fetching Eventbrite event:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
     fetchEventDetails();
   }, []);
