@@ -10,9 +10,9 @@ function Events() {
 
         <ul>
             <img src="/assets/IMG_5737-removebg-preview.png" className="party-logo-images" width="500" height="150" data-aos="fade-up"/>
-            <li><img src="/assets/IMG_5734.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
             <li><img src="/assets/IMG_5738.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
             <li><img src="/assets/IMG_5739.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
+            <li><img src="/assets/IMG_5734.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
           </ul>  
         </div>
     </section>

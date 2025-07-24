@@ -117,7 +117,7 @@ nav ul li a.active {
 }
 
 /* Centering the announcement container */
-.announcement-container {
+.announcement-container, .review-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -127,13 +127,11 @@ nav ul li a.active {
   color: white;
   font-family: 'Georgia', serif;
   text-align: center;
- 
 }
 
 
-
 .playlists {
-  transform: translateY(500px);
+  transform: translateY(75px);
   color: white;
   text-align: center;
   align-items: center;
