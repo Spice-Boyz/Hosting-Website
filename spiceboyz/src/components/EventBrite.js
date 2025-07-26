@@ -8,10 +8,10 @@ const EventBrite = () => {
   useEffect(() => {
     const fetchEventDetails = async () => {
       try {
-      console.log("Using API key:", process.env.REACT_APP_EVENTBRITE_API_KEY); // ✅ Debug here
+      console.log("Using API key:", process.env.REACT_APP_EVENTBRITE_API_KEY); 
 
       const response = await axios.get(
-        "https://www.eventbriteapi.com/v3/events/927564078127/",
+        "https://www.eventbriteapi.com/v3/events/1531511555289/",
         {
           headers: {
             Authorization: `Bearer ${process.env.REACT_APP_EVENTBRITE_API_KEY}`,
@@ -39,7 +39,7 @@ const EventBrite = () => {
           console.log(" EBWidgets loaded");
           window.EBWidgets.createWidget({
             widgetType: "checkout",
-            eventId: "927564078127",
+            eventId: "1531511555289",
             modal: true,
             modalTriggerElementId: "eventbrite-widget-trigger",
           });
