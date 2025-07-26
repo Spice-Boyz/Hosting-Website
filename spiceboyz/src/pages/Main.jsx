@@ -21,12 +21,13 @@ function Main() {
                     <EventBrite/>
            
             </div>
-
+            
             <div className="review-container" data-aos="fade-up">
                 <h3>#SHOW-WORKINGS</h3>
                 <ReviewWidget />
             </div>
-     
+            
+    
             <div className = "playlists" > 
              <h2 >Editors Picks:</h2>
              <PlaylistScroller  />
