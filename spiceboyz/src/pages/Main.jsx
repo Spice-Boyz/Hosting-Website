@@ -9,15 +9,14 @@ function Main() {
     return (
         
         <main   >
-            <div style={{height: "10vh"}}></div>
+            <div style={{height: "20vh"}}></div>
            
              <div  className="announcement-container" data-aos="fade-up"> 
                 <h2>1 YEAR OF SPICEBOYZ</h2>
                 <h3>#SB4L</h3>
                 
               
-                <p style={{height: "10vh"}}></p>
-                <h4>Tickets to next party:</h4>
+                <div style={{height: "20vh"}}></div>
                     <EventBrite/>
            
             </div>
