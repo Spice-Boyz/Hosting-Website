@@ -1,0 +1,384 @@
+
+/* Given CSS from "styles.css"*/
+
+html, body {
+  overflow: auto;
+  color: #000000;
+  background-color: #000000;
+  
+  
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+
+}
+.app-container{
+  position: relative; /* Keeps child elements in place */
+  width: 100vw; /* Full width of viewport */
+  height: 100vh; /* Full height of viewport */
+  overflow: hidden; 
+}
+
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Vertically align items */
+  z-index: 1000;
+  transition: background-color 1s ease;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between; /* Ensure logo and nav are spaced properly */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for the container */
+}
+
+header .header-logo {
+  text-align: center; /* Align the logo to the center */
+  justify-content: center;
+  
+}
+
+header .header-logo img {
+  width: 80px; /* Adjust logo size */
+}
+
+header nav {
+  font-family: 'Georgia', serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.5px;
+  text-align: center; /* Center the navigation links */
+  width: 100%; /* Allow nav to take up full width */
+}
+
+header nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  justify-content: center; /* Center the list items */
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+  padding-bottom: 5px;
+}
+
+header nav ul li a:hover {
+  color: #e8562a;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 1); /* Dark background on scroll */
+}
+
+nav ul li a.active {
+  color: #eeebea91;
+  border-bottom: 2px solid #e8562a;
+}
+/* only apply on mobile */
+@media (max-width: 768px) {
+  .mobile-menu a.active {
+    /* simple orange underline */
+    text-decoration: underline;
+    color: #eeebea91;
+    text-decoration-color: #e8562a;
+    /* optional: move the underline a bit below the text */
+    text-underline-offset: 5px;
+  }
+}
+
+/* Centering the announcement container */
+.announcement-container, .review-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+
+.playlists {
+  transform: translateY(75px);
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  justify-content: center;        /* centers the whole row */
+
+
+
+}
+
+/* Style for the announcement text */
+
+footer {
+  position: relative;
+  font-family: 'Georgia', serif;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 8);
+  z-index: 1000;
+
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.footer-contactus {
+  flex: 1; 
+  text-align: center; 
+  
+}
+      
+
+.footer-container a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+  color: #e8562a; 
+}
+
+.updates-form input {
+  border: 1px solid rgb(175, 174, 174);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(254, 254, 254);
+  outline: none;
+  max-width: 500px;
+  width: 80%;
+  box-sizing: border-box;
+  
+}
+
+.updates-form input::placeholder {
+  color: rgb(150, 149, 149);
+  opacity: 1; 
+  font-family: 'Georgia', serif;
+
+}
+
+.updates-form button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.updates-form button:hover {
+  background-color: #e8562a;
+  color: rgb(255, 254, 254);
+}
+
+.updates-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.updates-form li {
+  margin-top: 10px;
+}
+
+
+
+
+.small-image,.party-logo-images {
+    max-width: 85%;
+    height: auto;
+    
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+ [data-aos] {
+  opacity: 1 !important;
+}
+
+
+
+.jaiye, .masked, .italawa, .all-four {
+   top: 55%;
+   align-items: center;
+   text-align: center;
+}
+
+
+
+/* EVENTS PAGE SECTION*/
+
+
+
+
+
+
+/*MEDIA PAGE SECTION*/
+.aboutus {
+  align-items: center;/* Centers the div */
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  z-index: 5;
+}
+
+
+
+
+
+/* EVENTS PAGE SECTION*/
+
+/* Base Styles */
+.navbar {
+    position: fixed;        /* 👈 fixed in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    height: 50px;
+}
+
+
+/* Mobile Menu */
+.mobile-menu {
+     overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  padding: 0; /* starts collapsed */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  
+  
+}
+
+.mobile-menu.open {
+  max-height: 300px; 
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  padding: 20px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.mobile-menu a:hover {
+  color: #e8562a;
+}
+
+.mobile-menu img {
+    height: 50px;
+    margin: 10px 0;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/*MEDIA PAGE SECTION*/
+
+
