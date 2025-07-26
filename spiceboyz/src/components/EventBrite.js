@@ -8,7 +8,7 @@ const EventBrite = () => {
   useEffect(() => {
     const fetchEventDetails = async () => {
       try {
-      console.log("Using API key:", process.env.REACT_APP_EVENTBRITE_API_KEY); // ✅ Debug here
+      console.log("Using API key:", process.env.REACT_APP_EVENTBRITE_API_KEY); 
 
       const response = await axios.get(
         "https://www.eventbriteapi.com/v3/events/927564078127/",
