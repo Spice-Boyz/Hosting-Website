@@ -19,7 +19,7 @@ function About() {
             <h1>MISSION STATEMENT !</h1>
             <h4>Cultivate an environment suitable for everyone of all different walks </h4>
             <h4> of life, To feel free, bringing a breath of fresh air to the young saint louis party scene</h4>
-            <h4>I forgot our mission statement</h4>
+            <h4>ISUBIIIIIIIIII</h4>
             <h3>#SB4L</h3>
         </div>
         <div style={{height: "25vh"}}></div>
