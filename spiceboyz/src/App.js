@@ -15,40 +15,38 @@ import './App.css';
 
 
 
-
+import ScrollToTop from './components/ScrollToTop'; // <-- Import it
 
 function App() {
   const [loading, setLoading] = React.useState(true);
+
   React.useEffect(() => {
     setTimeout(() => setLoading(false), 4500);
     AOS.init({
-      duration: 1000,     
-      offset: 100,         
+      duration: 1000,
+      offset: 100,
       easing: 'ease-in-out',
-      delay: 100
-  });
+      delay: 100,
+    });
   }, []);
 
   if (loading) return <Loading />;
 
-  return ( 
-      <Router>
-        
-        <Header />
+  return (
+    <Router>
+      <ScrollToTop /> {/* <-- Add it here */}
+      <Header />
 
-        <Routes> 
-          <Route path="/"       element={<Main />}   />
-          <Route path="/about"  element={<About />}  />
-          <Route path="/events" element={<Events />} />
-        </Routes>
-        
-        <Footer />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/events" element={<Events />} />
+      </Routes>
 
-      </Router>
-     
+      <Footer />
+    </Router>
   );
 }
 
-
-
 export default App;
+
