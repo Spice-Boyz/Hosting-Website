@@ -21,7 +21,7 @@ function App() {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(false), 4500);
+    setTimeout(() => setLoading(false), 13500);
     AOS.init({
       duration: 1000,
       offset: 100,
