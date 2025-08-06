@@ -117,18 +117,29 @@ nav ul li a.active {
 }
 
 /* Centering the announcement container */
-.announcement-container, .review-container {
+.announcement-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 40vh;
   color: white;
   font-family: 'Georgia', serif;
   text-align: center;
 }
 
+.review-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center
+}
 
 .playlists {
   transform: translateY(75px);
@@ -268,6 +279,9 @@ footer {
   font-family: 'Georgia', serif;
   text-align: center;
   z-index: 5;
+  align-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 
