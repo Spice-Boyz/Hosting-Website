@@ -12,8 +12,6 @@ function Main() {
             <div style={{height: "35vh"}}></div>
            
              <div  className="announcement-container" data-aos="fade-up"> 
-                <h2>1 YEAR OF SPICEBOYZ</h2>
-                <h3 style={{marginBottom: "20px"}}>#SB4L</h3>
                 <div style={{height: "15vh"}}></div>
                 <EventBrite/>
                 
@@ -28,6 +26,7 @@ function Main() {
 
             <div className = "playlists" > 
              <h2 >Editors Picks:</h2>
+             <h5 style = {{ color: "grey", fontSize: "small"}}>Get ready for Back to School, with tunes to kick of your fall semester , Lasgidi PREP is here</h5>
              <PlaylistScroller  />
 
             </div>
