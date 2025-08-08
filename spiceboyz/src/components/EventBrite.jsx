@@ -11,7 +11,7 @@ const EventBrite = () => {
 
 
       const response = await axios.get(
-        "https://www.eventbriteapi.com/v3/events/927564078127/",
+        "https://www.eventbriteapi.com/v3/events/1569143493429/",
         {
           headers: {
             Authorization: `Bearer ${process.env.REACT_APP_EVENTBRITE_API_KEY}`,
@@ -39,7 +39,7 @@ const EventBrite = () => {
           console.log(" EBWidgets loaded");
           window.EBWidgets.createWidget({
             widgetType: "checkout",
-            eventId: "927564078127",
+            eventId: "1569143493429",
             modal: true,
             modalTriggerElementId: "eventbrite-widget-trigger",
           });
@@ -79,24 +79,28 @@ const EventBrite = () => {
 
 const containerStyle = {
   padding: "20px",
-  fontFamily: "Arial, sans-serif",
+  fontFamily: "'Georgia', serif",
 };
 
 const imageStyle = {
   maxWidth: "300px",
   borderRadius: "8px",
   marginBottom: "20px",
+  height: "auto",
+  outerHeight: "300px"
 };
 
 const buttonStyle = {
   padding: "12px 24px",
-  backgroundColor: "#f6682f",
-  color: "#fff",
+  backgroundColor: "#000",        // black background
+  color: "#fff",                  // white text
   border: "none",
-  borderRadius: "5px",
-  fontSize: "16px",
+  borderRadius: "20px",
+  fontSize: "14px",
   cursor: "pointer",
   marginTop: "10px",
+  boxShadow: "0 0 10px #f6682f, 0 0 20px #f6682f", // orange halo effect
+  transition: "box-shadow 0.3s ease",
 };
 
 export default EventBrite;

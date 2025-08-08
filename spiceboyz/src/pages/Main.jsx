@@ -15,7 +15,8 @@ function Main() {
                 <h2>1 YEAR OF SPICEBOYZ</h2>
                 <h3 style={{marginBottom: "10px"}}>#SB4L</h3>
                 <div style={{height: "10vh"}}></div>
-                <video className='small-image' controls><source src="/assets/italawavideo2.mp4" type="video/mp4" />Your browser does not support the video tag.</video>
+                <EventBrite/>
+                
             </div>
             
             <div style={{marginTop: "50px"}} className="review-container" data-aos="fade-up">
