@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios"; 
+import "./EventBrite.css";
 
 const EventBrite = () => {
   const [event, setEvent] = useState(null);
@@ -66,7 +67,7 @@ const EventBrite = () => {
             />
           )}
           <p>{event.description.text}</p>
-          <button id="eventbrite-widget-trigger" style={buttonStyle}>
+          <button id="eventbrite-widget-trigger" className="buy-button" >
             Buy Tickets
           </button>
         </>
@@ -79,24 +80,16 @@ const EventBrite = () => {
 
 const containerStyle = {
   padding: "20px",
-  fontFamily: "Arial, sans-serif",
+  fontFamily: "'Georgia', serif",
 };
 
 const imageStyle = {
   maxWidth: "300px",
   borderRadius: "8px",
   marginBottom: "20px",
+  height: "auto",
+  outerHeight: "300px"
 };
 
-const buttonStyle = {
-  padding: "12px 24px",
-  backgroundColor: "#f6682f",
-  color: "#fff",
-  border: "none",
-  borderRadius: "5px",
-  fontSize: "16px",
-  cursor: "pointer",
-  marginTop: "10px",
-};
 
 export default EventBrite;

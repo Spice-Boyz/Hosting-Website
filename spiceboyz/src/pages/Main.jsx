@@ -9,14 +9,15 @@ function Main() {
     return (
         
         <main   >
-            <div style={{height: "25vh"}}></div>
+            <div style={{height: "35vh"}}></div>
            
              <div  className="announcement-container" data-aos="fade-up"> 
-                <h2>1 YEAR OF SPICEBOYZ</h2>
-                <h3 style={{marginBottom: "10px"}}>#SB4L</h3>
-                <div style={{height: "10vh"}}></div>
-                <video className='small-image' controls><source src="/assets/italawavideo2.mp4" type="video/mp4" />Your browser does not support the video tag.</video>
+                <div style={{height: "15vh"}}></div>
+                <EventBrite/>
+                
+                
             </div>
+            <div style={{height: "10vh"}}></div>
             
             <div style={{marginTop: "50px"}} className="review-container" data-aos="fade-up">
                 <h3>#SHOW-WORKINGS</h3>
@@ -25,6 +26,7 @@ function Main() {
 
             <div className = "playlists" > 
              <h2 >Editors Picks:</h2>
+             <h5 style = {{ color: "grey", fontSize: "small"}}>Get ready for Back to School, with tunes to kick of your fall semester , Lasgidi PREP is here</h5>
              <PlaylistScroller  />
 
             </div>
