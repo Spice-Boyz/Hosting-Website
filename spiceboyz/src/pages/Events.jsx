@@ -38,7 +38,6 @@ function Events() {
             <img src="/assets/IMG_5748-removebg-preview.png" className='party-logo-images' width="700" height="150" data-aos="fade-up"/>
             <li><img src="/assets/IMG_5749.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
             <li><img src="/assets/IMG_5751.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5750.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
             <video className='small-image' controls><source src="/assets/italawavideo2.mp4" type="video/mp4" />Your browser does not support the video tag.</video>
             
           </ul>  
