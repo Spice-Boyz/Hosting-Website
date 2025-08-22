@@ -36,12 +36,13 @@ function Main() {
                     data-border_color="#fafafaff"
                     data-digits_color = "#f8efefff"
                     data-last_unit_color = "#f6682f"
+                    
                     data-font = "Courier New"
                     data-dt="2025-08-29 22:00"
                     data-timezone="America/Chicago"
                     className="tickcounter"
                     href="https://www.tickcounter.com"
-                    style={{ display: "block", width: "45%", position: "relative", paddingBottom: "25%" , textAlign: "center", color: "white", backgroundColor: "black" , marginLeft: "27%"}}
+                    style={{ display: "block", width: "50%", position: "relative", paddingBottom: "25%" , textAlign: "center", color: "white", backgroundColor: "black" , marginLeft: "26%"}}
                 >
                     Countdown
                 </a>
