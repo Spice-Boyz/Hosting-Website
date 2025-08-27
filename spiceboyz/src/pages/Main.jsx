@@ -52,7 +52,14 @@ function Main() {
            
              <div  className="announcement-container" data-aos="fade-up"> 
                 <div style={{height: "15vh"}}></div>
-                <EventBrite/>
+                <img src="/assets/Lasgidiprepflyer.png" className='party-logo-images' width="300" height="150" data-aos="fade-up"/>
+                <div style={{height: "5vh"}}></div>
+                <a href="https://www.eventbrite.com/e/sb-academy-lasgidi-prep-tickets-1569143493429?aff=ebdssbdestsearch">
+                    <button class="buy-button">Buy Tickets</button>
+                </a>
+                 
+
+                
                 
                 
             </div>
