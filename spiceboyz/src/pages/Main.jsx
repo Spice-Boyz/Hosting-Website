@@ -30,7 +30,7 @@ function Main() {
                 <a
                     ref={tickRef}
                     data-type="countdown"
-                    data-name="LASGIDI PREP BEGINS IN:"
+                    data-name="MASKED V2 BEGINS IN:"
                     data-bg_color="#000000ff"
                     data-name_color="#f6682f"
                     data-border_color="#fafafaff"
@@ -38,7 +38,7 @@ function Main() {
                     data-last_unit_color = "#f6682f"
                     
                     data-font = "Courier New"
-                    data-dt="2025-08-29 22:00"
+                    data-dt="2025-11-01 21:00"
                     data-timezone="America/Chicago"
                     className="tickcounter"
                     href="https://www.tickcounter.com"
@@ -51,17 +51,8 @@ function Main() {
             <div style={{height: "15vh"}}></div>
            
              <div  className="announcement-container" data-aos="fade-up"> 
-                <div style={{height: "15vh"}}></div>
-                <img src="/assets/Lasgidiprepflyer.png" className='party-logo-images' width="300" height="150" data-aos="fade-up"/>
-                <div style={{height: "5vh"}}></div>
-                <a href="https://www.eventbrite.com/e/sb-academy-lasgidi-prep-tickets-1569143493429?aff=ebdssbdestsearch">
-                    <button class="buy-button">Buy Tickets</button>
-                </a>
-                 
-
-                
-                
-                
+               <EventBrite/>
+       
             </div>
             <div style={{height: "10vh"}}></div>
             
