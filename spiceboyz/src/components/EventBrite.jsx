@@ -1,95 +1,38 @@
-import { useEffect, useState } from "react";
-import axios from "axios"; 
-import "./EventBrite.css";
+import { useEffect } from "react";
 
-const EventBrite = () => {
-  const [event, setEvent] = useState(null);
-  const [loading, setLoading] = useState(true);
-
+export default function EventBrite() {
   useEffect(() => {
-    const fetchEventDetails = async () => {
-      try {
+    const CONTAINER_ID = "eventbrite-widget-container-1811064124549";
+    const SCRIPT_SRC = "https://www.eventbrite.com/static/widgets/eb_widgets.js";
 
+    const exampleCallback = () => console.log("Order complete!");
 
-      const response = await axios.get(
-        "https://www.eventbriteapi.com/v3/events/1569143493429/",
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_EVENTBRITE_API_KEY}`,
-          },
-        }
-      );
-      setEvent(response.data);
-    } catch (error) {
-      console.error("Error fetching Eventbrite event:", error);
-    } finally {
-      setLoading(false);
+    const initWidget = () => {
+      if (!window.EBWidgets) return;
+      window.EBWidgets.createWidget({
+        widgetType: "checkout",
+        eventId: "1811064124549",
+        iframeContainerId: CONTAINER_ID,
+        iframeContainerHeight: 425,
+        onOrderComplete: exampleCallback,
+      });
+    };
+
+    if (window.EBWidgets) {
+      initWidget();
+    } else {
+      let script = document.querySelector(`script[src="${SCRIPT_SRC}"]`);
+      if (!script) {
+        script = document.createElement("script");
+        script.src = SCRIPT_SRC;
+        script.async = true;
+        script.onload = initWidget;
+        document.body.appendChild(script);
+      } else {
+        script.addEventListener("load", initWidget, { once: true });
+      }
     }
-  };
-
-    fetchEventDetails();
   }, []);
 
-  useEffect(() => {
-    if (!loading && event) {
-      const script = document.createElement("script");
-      script.src = "https://www.eventbrite.com/static/widgets/eb_widgets.js";
-      script.async = true;
-      script.onload = () => {
-        if (window.EBWidgets) {
-          console.log(" EBWidgets loaded");
-          window.EBWidgets.createWidget({
-            widgetType: "checkout",
-            eventId: "1569143493429",
-            modal: true,
-            modalTriggerElementId: "eventbrite-widget-trigger",
-          });
-        } else {
-          console.error(" EBWidgets not available on window");
-        }
-      };
-      document.body.appendChild(script);
-    }
-  }, [loading, event]);
-
-  if (loading) return <p>Loading event details...</p>;
-
-  return (
-    <div style={containerStyle}>
-      {event ? (
-        <>
-          <h1>{event.name.text}</h1>
-          {event.logo && (
-            <img
-              src={event.logo.url}
-              alt={event.name.text}
-              style={imageStyle}
-            />
-          )}
-          <p>{event.description.text}</p>
-          <button id="eventbrite-widget-trigger" className="buy-button" >
-            Buy Tickets
-          </button>
-        </>
-      ) : (
-        <p>No event data found.</p>
-      )}
-    </div>
-  );
-};
-
-const containerStyle = {
-  padding: "20px",
-  fontFamily: "'Georgia', serif",
-};
-
-const imageStyle = {
-  maxWidth: "300px",
-  borderRadius: "8px",
-  marginBottom: "20px",
-  height: "auto",
-  outerHeight: "300px"
-};
-
-
-export default EventBrite;
+  return <div id="eventbrite-widget-container-1811064124549"></div>;
+}
