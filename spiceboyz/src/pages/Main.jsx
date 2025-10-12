@@ -42,7 +42,7 @@ function Main() {
                     data-timezone="America/Chicago"
                     className="tickcounter"
                     href="https://www.tickcounter.com"
-                    style={{ display: "block", width: "50%", position: "relative", paddingBottom: "25%" , textAlign: "center", color: "white", backgroundColor: "black" , marginLeft: "26%"}}
+                    style={{ display: "block", width: "50%", position: "relative", paddingBottom: "25%" , textAlign: "center", color: "white", backgroundColor: "black" , marginLeft: "24%"}}
                 >
                     Countdown
                 </a>
@@ -63,7 +63,7 @@ function Main() {
 
             <div className = "playlists" > 
              <h2 >Editors Picks:</h2>
-             <h5 style = {{ color: "grey", fontSize: "small"}}>Get ready for Back to School, with tunes to kick of your fall semester , Lasgidi PREP is here</h5>
+             <h5 style = {{ color: "grey", fontSize: "small"}}>Get ready for spooky SZN, with tunes to kick it off , MASKED V2 is here</h5>
              <PlaylistScroller  />
 
             </div>

@@ -103,7 +103,7 @@ const containerStyle = {
 };
 
 const imageStyle = {
-  maxWidth: "400px",   
+  maxWidth: "350px",   
   height: "auto",
   borderRadius: "8px",
   marginBottom: "20px",

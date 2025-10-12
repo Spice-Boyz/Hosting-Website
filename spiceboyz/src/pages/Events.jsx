@@ -4,6 +4,28 @@ function Events() {
     <div>
        
         <div style={{height: "20vh"}}></div>
+
+        <section>
+        <div className = "masked">
+
+        <ul>
+            <img src="/assets/IMG_5740-removebg-preview.png" className='party-logo-images' width="700" height="210" data-aos="fade-up"/>
+            <li><img src="/assets/IMG_5745.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
+            <li><img src="/assets/IMG_5744.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
+            <li><img src="/assets/IMG_5746.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
+          </ul>  
+        </div>
+        </section>
+
+        {/*<section>
+        <div className = "lasgidi">
+        <ul>
+            <img src="/assets/image-removebg-preview.png" className='party-logo-images' width="700" height="210" data-aos="fade-up"/>
+           
+          </ul>  
+        </div>
+        </section>*/}
+
         <section>
         <div className = "jaiye">
 
@@ -14,23 +36,11 @@ function Events() {
             <li><img src="/assets/IMG_5734.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
           </ul>  
         </div>
-    </section>
+        </section>
+
+
 
     <div style={{height: "5vh"}}></div>
-
-
-    <section>
-        <div className = "masked">
-
-        <ul>
-            <img src="/assets/IMG_5740-removebg-preview.png" className='party-logo-images' width="700" height="210" data-aos="fade-up"/>
-            <li><img src="/assets/IMG_5745.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5744.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5746.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-          </ul>  
-        </div>
-    </section>
-
     <section>
         <div class = "italawa">
             
