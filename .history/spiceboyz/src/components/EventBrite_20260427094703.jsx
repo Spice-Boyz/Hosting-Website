@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./EventBrite.css"; // optional if you want your old .buy-button style
 
-const EventBrite = ({ eventId = "1987764076863" }) => {
+const EventBrite = ({ eventId = "1811064124549" }) => {
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
 
