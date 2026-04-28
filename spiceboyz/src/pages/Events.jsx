@@ -8,9 +8,9 @@ function Events() {
                 <div className="masked">
                     <img src="/assets/IMG_5740-removebg-preview.png" alt="Jaiye party logo" className="party-logo-images" width="700" height="210" data-aos="fade-up" />
                     <ul>
-                        <li><img src="/assets/IMG_5745.jpeg" className="small-image" data-aos="fade-up" /></li>
-                        <li><img src="/assets/IMG_5744.jpeg" className="small-image" data-aos="fade-up" /></li>
-                        <li><img src="/assets/IMG_5746.jpeg" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5745.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5744.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5746.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
                     </ul>
                 </div>
             </section>
@@ -25,9 +25,9 @@ function Events() {
                 <div className="jaiye">
                     <img src="/assets/IMG_5737-removebg-preview.png" alt="Party logo" className="party-logo-images" width="500" height="150" data-aos="fade-up" />
                     <ul>
-                        <li><img src="/assets/IMG_5738.jpeg"  className="small-image" data-aos="fade-up" /></li>
-                        <li><img src="/assets/IMG_5739.jpeg"  className="small-image" data-aos="fade-up" /></li>
-                        <li><img src="/assets/IMG_5734.jpeg"  className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5738.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5739.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5734.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
                     </ul>
                 </div>
             </section>
@@ -36,10 +36,10 @@ function Events() {
 
             <section>
                 <div className="italawa">
-                    <img src="/assets/IMG_5748-removebg-preview.png" className="party-logo-images" width="700" height="150" data-aos="fade-up" />
+                    <img src="/assets/IMG_5748-removebg-preview.png" alt="" className="party-logo-images" width="700" height="150" data-aos="fade-up" />
                     <ul>
-                        <li><img src="/assets/IMG_5749.jpeg" className="small-image" data-aos="fade-up" /></li>
-                        <li><img src="/assets/IMG_5751.jpeg" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5749.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5751.jpeg" alt="" className="small-image" data-aos="fade-up" /></li>
                         <li>
                             <video className="small-image" controls>
                                 <source src="/assets/italawavideo2.mp4" type="video/mp4" />
