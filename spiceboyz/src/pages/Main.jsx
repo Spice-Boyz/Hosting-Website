@@ -30,15 +30,15 @@ function Main() {
                 <a
                     ref={tickRef}
                     data-type="countdown"
-                    data-name="MASKED V2 BEGINS IN:"
+                    data-name="LEGACY BEGINS IN:"
                     data-bg_color="#000000ff"
-                    data-name_color="#f6682f"
+                    data-name_color="#4a1906"
                     data-border_color="#fafafaff"
                     data-digits_color = "#f8efefff"
-                    data-last_unit_color = "#f6682f"
+                    data-last_unit_color = "#6e3822"
                     
                     data-font = "Courier New"
-                    data-dt="2025-11-01 21:00"
+                    data-dt="2026-05-09 21:00"
                     data-timezone="America/Chicago"
                     className="tickcounter"
                     href="https://www.tickcounter.com"
@@ -63,7 +63,7 @@ function Main() {
 
             <div className = "playlists" > 
              <h2 >Editors Picks:</h2>
-             <h5 style = {{ color: "grey", fontSize: "small"}}>Get ready for spooky SZN, with tunes to kick it off , MASKED V2 is here</h5>
+             <h5 style = {{ color: "grey", fontSize: "small"}}>We all got a Legacy to leave behind, worry about that later, party one more time before graduation</h5>
              <PlaylistScroller  />
 
             </div>
