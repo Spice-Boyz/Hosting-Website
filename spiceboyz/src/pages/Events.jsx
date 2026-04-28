@@ -1,62 +1,56 @@
-
 function Events() {
-    return(
-    <div>
-       
-        <div style={{height: "20vh"}}></div>
+    return (
+        <div>
 
-        <section>
-        <div className = "masked">
+            <div style={{ height: "20vh" }}></div>
 
-        <ul>
-            <img src="/assets/IMG_5740-removebg-preview.png" className='party-logo-images' width="700" height="210" data-aos="fade-up"/>
-            <li><img src="/assets/IMG_5745.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5744.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5746.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-          </ul>  
+            <section>
+                <div className="masked">
+                    <img src="/assets/IMG_5740-removebg-preview.png" alt="Jaiye party logo" className="party-logo-images" width="700" height="210" data-aos="fade-up" />
+                    <ul>
+                        <li><img src="/assets/IMG_5745.jpeg" alt="Jaiye event photo" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5744.jpeg" alt="Jaiye event photo" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5746.jpeg" alt="Jaiye event photo" className="small-image" data-aos="fade-up" /></li>
+                    </ul>
+                </div>
+            </section>
+
+            {/*<section>
+                <div className="lasgidi">
+                    <img src="/assets/image-removebg-preview.png" alt="Lasgidi party logo" className="party-logo-images" width="700" height="210" data-aos="fade-up" />
+                </div>
+            </section>*/}
+
+            <section>
+                <div className="jaiye">
+                    <img src="/assets/IMG_5737-removebg-preview.png" alt="Party logo" className="party-logo-images" width="500" height="150" data-aos="fade-up" />
+                    <ul>
+                        <li><img src="/assets/IMG_5738.jpeg" alt="Event photo" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5739.jpeg" alt="Event photo" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5734.jpeg" alt="Event photo" className="small-image" data-aos="fade-up" /></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div style={{ height: "5vh" }}></div>
+
+            <section>
+                <div className="italawa">
+                    <img src="/assets/IMG_5748-removebg-preview.png" alt="Italawa party logo" className="party-logo-images" width="700" height="150" data-aos="fade-up" />
+                    <ul>
+                        <li><img src="/assets/IMG_5749.jpeg" alt="Italawa event photo" className="small-image" data-aos="fade-up" /></li>
+                        <li><img src="/assets/IMG_5751.jpeg" alt="Italawa event photo" className="small-image" data-aos="fade-up" /></li>
+                        <li>
+                            <video className="small-image" controls>
+                                <source src="/assets/italawavideo2.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </li>
+                    </ul>
+                </div>
+                <div style={{ height: "5vh" }}></div>
+            </section>
         </div>
-        </section>
-
-        {/*<section>
-        <div className = "lasgidi">
-        <ul>
-            <img src="/assets/image-removebg-preview.png" className='party-logo-images' width="700" height="210" data-aos="fade-up"/>
-           
-          </ul>  
-        </div>
-        </section>*/}
-
-        <section>
-        <div className = "jaiye">
-
-        <ul>
-            <img src="/assets/IMG_5737-removebg-preview.png" className="party-logo-images" width="500" height="150" data-aos="fade-up"/>
-            <li><img src="/assets/IMG_5738.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5739.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5734.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-          </ul>  
-        </div>
-        </section>
-
-
-
-    <div style={{height: "5vh"}}></div>
-    <section>
-        <div class = "italawa">
-            
-        <ul>
-            <img src="/assets/IMG_5748-removebg-preview.png" className='party-logo-images' width="700" height="150" data-aos="fade-up"/>
-            <li><img src="/assets/IMG_5749.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <li><img src="/assets/IMG_5751.jpeg" alt="jaiyeimages" className="small-image" data-aos="fade-up"/></li>
-            <video className='small-image' controls><source src="/assets/italawavideo2.mp4" type="video/mp4" />Your browser does not support the video tag.</video>
-            
-          </ul>  
-        </div>
-        <div style={{height: "5vh"}}></div>
-    </section>
-    </div>
-        
-
     );
 }
 
