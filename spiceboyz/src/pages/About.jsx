@@ -9,7 +9,7 @@ function About() {
 
         <ul>
             <li>
-                <img src="/assets/SPICEBOYZCHROME.png"  className="small-image"  width="450" height="450" data-aos="fade-down"/></li>
+                <img src="/assets/SPICEBOYZCHROME.png" alt="SpiceBoyz logo" className="small-image"  width="450" height="450" data-aos="fade-down"/></li>
             
           </ul> 
           
